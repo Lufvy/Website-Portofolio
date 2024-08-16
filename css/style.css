@@ -30,7 +30,7 @@ html{
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: -999;
+    /* z-index: -999; */
   }
   
 
@@ -234,6 +234,7 @@ span{
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
+    z-index: 20;
 }
 
 .education-box img {
@@ -256,7 +257,7 @@ span{
 
 .education-box h3{
     font-size: 2.6rem;
-    color: var(--text-color);
+    color: white;
 }
 
 .education-box p{
