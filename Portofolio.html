@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abraham Portofolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "t_ChXLdnrilbTWmR3",
+          });
+      })();
+    </script>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- background animation-->
+    <canvas></canvas>
+
+    <!-- header design -->
+     <header class="header">
+      <a href="#" class="logo"></a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+     </header>
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Abraham</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Welcome to my portoflio, Explore technology through creativity and innovation. My journey focuses on learning, evolving, and crafting impactful experiences. Discover more about me!</p>
+
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/abraham-kefas-wilham/"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://github.com/Lufvy/"><i class='bx bxl-github'></i></a>
+        </div>
+        <a href="./images/AR Vision.png" class="btn" download>Download CV <i class='bx bxs-download' ></i></a>
+
+
+      </div>
+      <div class="home-img">
+        <img src="./images/home.png" alt="">
+      </div>
+    </section>
+    
+    <!-- about section design -->
+     <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/about.png" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Developer</h3>
+        <p>I am Abraham Kefas Wilham, an undergraduate student in Mobile Application and Technology from Binus University. With a strong focus on mobile app development, I have hands-on experience with Flutter, Kotlin, and Unity, and a background in web development along with experience in several programming languages. I am skilled in creating innovative and user-friendly applications. My academic journey has equipped me with expertise in both front-end and back-end development, and I am passionate about leveraging technology to address real-world challenges. Committed to continuous learning, I am driven by a dedication to excellence in mobile technology.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+     </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education & Certificate</span></h2>
+      <div class="education-container">
+        <div class="education-box">
+          <img src="./images/Binus.png" alt="">
+          <h3>Bina Nusantara University</h3>
+          <p>Mobile Application and Technology</p>
+          <div class="binus-info">
+            <p>4th Semester</p>
+            <p>GPA: 3.61</p>
+          </div>
+        </div>
+
+        <div class="education-box sma">
+          <span class="bhk"><img src="./images/bhk.png" alt=""></span>
+          <h3>SMA Bunda Hati Kudus</h3>
+          <p>Ilmu Pengetahuan Alam (MIPA)</p>
+         
+          <p></p>
+        </div>
+
+        <a class="education-box" href="./images/certificate.png" target="_blank">
+          <div >
+            <span class="certificate"><img src="./images/certificate.png" alt=""></span>
+            <h3>winning 2nd place, SoCS Hackathon 2023</h3>
+          </div>
+        </a>
+        
+
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- project section design -->
+    <section class="project" id="project">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="project-container">
+
+        <!-- project Ar Vision -->
+        <div class="project-box">
+          <img src="./images/AR Vision.png" alt="">
+          <div class="project-tech">
+            <span class="unity"><img src="./images/unity-seeklogo.svg" alt=""></span>
+          </div>
+          <div class="project-layer">
+            <h4>AR Vision</h4>
+
+            <div class="project-link">
+              <a href="https://644a2784b928e.site123.me/">
+                <div class="project-icon-link-box">
+                  <i class='bx bx-link-external'></i>
+                  <span class="hover-text">Website</span>
+                </div>
+              </a>
+              
+              <a href="https://github.com/Lufvy/AR-Vision">
+                <div class="project-icon-link-box">
+                  <i class='bx bxl-github'></i>
+                  <span class="hover-text">GitHub</span>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <!-- project Rentify -->
+        <div class="project-box">
+          <img src="./images/Rentify.png" alt="">
+
+          <div class="project-tech">
+            <span class="kotlin"><img src="./images/kotlin-seeklogo.svg" alt=""></span>
+            <span class="firebase"><img src="./images/firebase-seeklogo.svg" alt=""></span>
+            <span class="android-studio"><img src="./images/android-studio-seeklogo.svg" alt=""></span>
+          </div>
+          
+          <div class="project-layer">
+            <h4>Rentify</h4>
+            <div class="project-link">
+
+              <a href="https://rentifymcs.my.canva.site/">
+                <div class="project-icon-link-box">
+                  <i class='bx bx-link-external'></i>
+                  <span class="hover-text">Presentation</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/ZyVoir/Rentify">
+                <div class="project-icon-link-box">
+                  <i class='bx bxl-github'></i>
+                  <span class="hover-text">GitHub</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- project Pokemart -->
+        <div class="project-box">
+          <img src="./images/Pokemart.png" alt="">
+
+          <div class="project-tech">
+            <span class="flutter"><img src="./images/flutter-seeklogo.svg" alt=""></span>
+            <span class="firebase"><img src="./images/firebase-seeklogo.svg" alt=""></span>
+            <span class="android-studio"><img src="./images/android-studio-seeklogo.svg" alt=""></span>
+          </div>
+
+          <div class="project-layer">
+            <h4>Pokemart</h4>
+
+            <div class="project-link">
+              <a href="https://github.com/Lufvy/Pokemart">
+                <div class="project-icon-link-box">
+                  <i class='bx bxl-github'></i>
+                  <span class="hover-text">GitHub</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/puffnpoof.png" alt="">
+
+          <div class="project-tech">
+            <span class="kotlin"><img src="./images/kotlin-seeklogo.svg" alt=""></span>
+            <span class="sqlite"><img src="./images/sqlite-seeklogo.svg" alt=""></span>
+            <span class="android-studio"><img src="./images/android-studio-seeklogo.svg" alt=""></span>
+          </div>
+
+          <div class="project-layer">
+            <h4>PuFFnPooF</h4>
+
+            <div class="project-link">
+              <a href="https://github.com/Lufvy/PuFFnPoof">
+                <div class="project-icon-link-box">
+                  <i class='bx bxl-github'></i>
+                  <span class="hover-text">GitHub</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="project-box">
+          <img src="./images/Willfy.png" alt="">
+
+          <div class="project-tech">
+            <span class="html"><img src="./images/html5-with-wordmark-color-seeklogo.svg" alt="Flutter"></span>
+            <span class="css"><img src="./images/css-3-seeklogo.svg" alt="Flutter"></span>
+            <span class="js"><img src="./images/javascript-js-seeklogo.svg" alt="Firebase"></span>
+          </div>
+
+          <div class="project-layer">
+            <h4>Willfy</h4>
+
+            <div class="project-link">
+              <a href="https://github.com/Lufvy/Willify">
+                <div class="project-icon-link-box">
+                  <i class='bx bxl-github'></i>
+                  <span class="hover-text">GitHub</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading"> Contact <span>Me!</span></h2>
+
+      <form id="MailForm">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+    
+        <div class="input-box">
+            <input type="text" id="subject" placeholder="Email Subject" required>
+        </div>
+    
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>by Abraham kefas wilham</p>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+    <!-- background animation js-->
+    <script src="./js/background.js"></script>
+
+    <!-- email js -->
+    <script src="./js/email.js"></script>
+
+  </body>
+</html>
