@@ -23,11 +23,11 @@ html{
 }
 
 
-  canvas {
+canvas {
     position: fixed;
     width: 100%;
     height: 100%;
-  }
+}
   
 
 body{
@@ -439,12 +439,24 @@ span{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding: 2rem 3%;
     background: var(--second-bg-color);
+    
 }
 
 .footer-text p{
     font-size: 1.6rem;
+}
+
+.footer-sosmed {
+    display: flex;
+    flex-direction: row;
+    font-size: 3.5rem;
+    gap: 2rem;
+    z-index: 100;
+}
+.footer-sosmed i{
+    color: var(--main-color);
 }
 
 @media (max-width: 1200px){
@@ -531,11 +543,7 @@ span{
         margin-top: 4rem;
     }
 
-    .education h2{
-        margin-bottom: 3rem;
-    }
-
-    .project h2{
+    .education h3{
         margin-bottom: 3rem;
     }
 
@@ -590,27 +598,6 @@ span{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
